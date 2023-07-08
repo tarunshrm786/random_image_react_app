@@ -1,6 +1,5 @@
 import React from 'react';
 import RandomImage from './RandomImage';
-import ShareButton from './ShareButton';
 import './App.css'; // Import the CSS file here
 
 const App = () => {
