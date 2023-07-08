@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import RandomImage from './RandomImage';
+import ShareButton from './ShareButton';
+import './App.css'; // Import the CSS file here
 
-function App() {
+const App = () => {
+  const currentURL = window.location.href;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <RandomImage />
+      <ShareButton url={currentURL} />
     </div>
   );
-}
+};
 
 export default App;
