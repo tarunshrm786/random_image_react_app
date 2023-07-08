@@ -3,7 +3,6 @@ import RandomImage from './RandomImage';
 import './App.css'; // Import the CSS file here
 
 const App = () => {
-  const currentURL = window.location.href;
 
   return (
     <div className="app">
