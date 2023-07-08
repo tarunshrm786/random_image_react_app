@@ -9,9 +9,10 @@ const App = () => {
   return (
     <div className="app">
       <RandomImage />
-      <ShareButton url={currentURL} />
+      {/* <ShareButton url={currentURL} /> */}
     </div>
   );
 };
 
 export default App;
+
